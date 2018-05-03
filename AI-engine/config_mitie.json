@@ -1,0 +1,9 @@
+{
+  "backend": "mitie",
+  "mitie_file": "AI-engine/data/total_word_feature_extractor.dat",
+  "path" : "AI-engine/",
+  "data" : "AI-engine/data/sitebot-data2.json",
+  "num_threads":100,
+  "pipeline":"mitie",
+  "port":"5003"
+}
