@@ -7,10 +7,16 @@
                 "entities": []
             },
             {
-                "text": "what do you do?",
+                "text": "hi",
                 "intent": "intro",
                 "entities": []
             },
+            {
+                "text": "Hello there",
+                "intent": "intro",
+                "entities": []
+            },
+
             {
                 "text": "I want to know about the weather",
                 "intent": "weather_request",

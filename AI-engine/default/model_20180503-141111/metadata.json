@@ -1,0 +1,20 @@
+{
+    "entity_synonyms": null,
+    "trained_at": "20180503-141111",
+    "pipeline": [
+        "rasa_nlu.utils.mitie_utils.MitieNLP",
+        "rasa_nlu.tokenizers.mitie_tokenizer.MitieTokenizer",
+        "rasa_nlu.extractors.mitie_entity_extractor.MitieEntityExtractor",
+        "rasa_nlu.extractors.entity_synonyms.EntitySynonymMapper",
+        "rasa_nlu.featurizers.regex_featurizer.RegexFeaturizer",
+        "rasa_nlu.classifiers.mitie_intent_classifier.MitieIntentClassifier"
+    ],
+    "mitie_file": "AI-engine/data/total_word_feature_extractor.dat",
+    "rasa_nlu_version": "0.11.3",
+    "training_data": "training_data.json",
+    "language": "en",
+    "intent_classifier_mitie": "intent_classifier.dat",
+    "mitie_feature_extractor_fingerprint": 10023965992282753551,
+    "entity_extractor_mitie": "entity_extractor.dat",
+    "regex_featurizer": null
+}

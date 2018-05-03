@@ -1,0 +1,52 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [],
+    "common_examples": [
+      {
+        "intent": "intro",
+        "entities": [],
+        "text": "who are you?"
+      },
+      {
+        "intent": "intro",
+        "entities": [],
+        "text": "what do you do?"
+      },
+      {
+        "intent": "weather_request",
+        "entities": [],
+        "text": "I want to know about the weather"
+      },
+      {
+        "intent": "weather_request",
+        "entities": [
+          {
+            "end": 28,
+            "entity": "location",
+            "start": 22,
+            "value": "Mumbai"
+          }
+        ],
+        "text": "How is the weather in Mumbai"
+      },
+      {
+        "intent": "weather_request",
+        "entities": [],
+        "text": "What is the weather?"
+      },
+      {
+        "intent": "weather_request",
+        "entities": [
+          {
+            "end": 37,
+            "entity": "location",
+            "start": 28,
+            "value": "Hyderabad"
+          }
+        ],
+        "text": "What is the weather like in Hyderabad"
+      }
+    ],
+    "entity_synonyms": []
+  }
+}
