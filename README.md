@@ -1,7 +1,7 @@
 # byfc
 This is a demo chatbot written in Python using Rasa nlu
 
-Clone this project from https://bit.ly/2FDqQHb
+Clone this project from http://bit.ly/DBSPythonMeetup
 
 Ensure you have virtualenv installed
 
