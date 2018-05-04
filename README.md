@@ -15,3 +15,6 @@ python -m rasa_nlu.train -c AI-engine/config_mitie.json
 
 to host/start model
 python -m rasa_nlu.server -c AI-engine/config_mitie.json
+
+virtualenv venv3 -p python3
+source venv3/bin/activate
