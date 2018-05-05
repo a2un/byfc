@@ -1,31 +1,44 @@
-# Build Your first Chatbot (byfc)
-This is a demo chatbot written in Python using Rasa nlu
+# Build Your First Chatbot (byfc)
+This is a demo chatbot written in Python using Rasa NLU
 
-Clone this project from http://bit.ly/DBSPythonMeetup
-
-Ensure you have virtualenv installed
+1. Ensure you have virtualenv installed
 
 ```
  pip install virtualenv
 ```
  
+2. Clone this project from http://bit.ly/DBSPythonMeetup and cd to byfc-master
+ ```
+ cd byfc-master
+ ```
  
- * To create and start a virtual environment 
+3. Create and start a virtual environment 
  ```
  virtualenv venv3 -p python3
  source venv3/bin/activate
  ```
- 
-Get the data total_word_feature_extractor.dat fle from [Google Drive](https://drive.google.com/open?id=1eCKtB9haQBIRTr1oAFwbN1VzmCIH6PRd)
+
+4. Install the required Python packages
+ ```
+ pip install -r requirements.txt
+ ```
+
+Skip to step 7 if you just want to host/start the model
+
+5. Get the data total_word_feature_extractor.dat fle from [Google Drive](https://drive.google.com/open?id=1eCKtB9haQBIRTr1oAFwbN1VzmCIH6PRd)
 or from [Github](https://github.com/mit-nlp/MITIE/releases/download/v0.4/MITIE-models-v0.2.tar.bz2)
 
- * To train model:
+6. To train model:
 ```
 python -m rasa_nlu.train -c AI-engine/config_mitie.json
 ```
 
- * To host/start model
+7. Deploy flask application
+```
+python app_engine/deploy.py
+```
+
+8. Host/start model
  ```
 python -m rasa_nlu.server -c AI-engine/config_mitie.json
 ```
-
