@@ -28,17 +28,19 @@ Skip to step 7 if you just want to host/start the model
 5. Get the data total_word_feature_extractor.dat fle from [Google Drive](https://drive.google.com/open?id=1eCKtB9haQBIRTr1oAFwbN1VzmCIH6PRd)
 or from [Github](https://github.com/mit-nlp/MITIE/releases/download/v0.4/MITIE-models-v0.2.tar.bz2)
 
-6. To train model:
+6. Place the .dat file from the zip in AI-Engine/data
+
+7. To train model:
 ```
 python -m rasa_nlu.train -c AI-engine/config_mitie.json
 ```
 
-7. Deploy flask application
+8. Deploy flask application
 ```
 python app_engine/deploy.py
 ```
 
-8. Host/start model
+9. Host/start model
  ```
 python -m rasa_nlu.server -c AI-engine/config_mitie.json
 ```
